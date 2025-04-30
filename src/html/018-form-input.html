@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼(input) 요소</title>
+    <link
+      rel="shortcut icon"
+      href="/public/favicon/likelion.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/public/font/suit/SUIT-Variable.woff2"
+    />
+    <link rel="stylesheet" href="/public/font/suit/SUIT-Variable.css" />
+    <style>
+      body {
+        font-family: 'SUIT Variable', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/index.html">메인 페이지 이동</a>
+    <br />
+    <h1>폼(input)요소</h1>
+
+    <form action="http://formspree.io/f/xeqwwbwk" method="POST">
+      <!-- 한줄 글상자(검색어) -검색어 입력서식-->
+      <!-- text : 텍스트상자 -->
+      <!-- 폼관련 요소는 모두 1대1로 대응되는 레이블을 가져야 함-->
+      <div>
+        <label for="userName">이름</label>
+        <input type="text" id="userName" />
+      </div>
+      <!-- 비밀번호 -->
+      <div>
+        <label for="userPassword">비밀번호</label
+        ><input
+          required
+          type="password"
+          name="userPassword"
+          id="userPassword"
+        />
+      </div>
+      <!-- search : 검색어 상자 -->
+      <div>
+        <label for="searchKeyword">검색어</label>
+        <input
+          type="search"
+          id="searchKeyword"
+          placeholder="검색어를 입력하세요"
+        />
+      </div>
+      <!-- tel : 전화번호 입력 서식 (HTML5에서 추가)-->
+      <div>
+        <label for="userEmail">전화번호</label
+        ><input required type="tel" name="userPhone" id="userPhone" />
+      </div>
+      <!-- email : 이메일  입력 서식 (HTML5에서 추가)-->
+      <div>
+        <label for="userEmail">이메일</label
+        ><input required type="email" name="userEmail" id="userEmail" />
+      </div>
+
+      <div>
+        <label for="userEmail">이메일</label
+        ><input required type="email" name="userEmail" id="userEmail" />
+      </div>
+
+      <!-- checkbox : 체크박스 -->
+      <div>
+        <input type="checkbox" value="html" name="bootcamp" id="likeLionHtml" />
+        <label for="likeLionHtml">HTML</label>
+      </div>
+      <div>
+        <input type="checkbox" value="css" name="bootcamp" id="likeLionCss" />
+        <label for="likeLionCss">CSS</label>
+      </div>
+      <!--radio : 라디오 서식-->
+      <div>
+        <label for="">
+          <input type="radio" name="classRoom" id="classRoom1" />회고 1팀
+        </label>
+      </div>
+      <div><input type="radio" name="classRoom" id="classRoom2" />회고 2팀</div>
+
+      <!-- 버튼 (전속, 초기화, 일반버튼)-->
+      <div>
+        <input type="submit" value="전송" />
+        <input type="reset" value="초기화" />
+        <input type="button" value="버튼" />
+      </div>
+    </form>
+  </body>
+</html>
