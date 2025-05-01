@@ -1,0 +1,11 @@
+/* 본문요소에 배경 색상 지정하기 */
+body {
+  background-color: #;
+}
+/* 제목 요소에 글자 크기 지정하기 */
+h1 {
+  font-size: small;
+  border-width: 1px;
+  border-style: solid;
+  border-color: currentColor;
+}
