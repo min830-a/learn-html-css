@@ -1,0 +1,29 @@
+.wrapper {
+  color: green;
+  border: 1px solid red;
+}
+.wrapper p {
+  border: inherit;
+}
+p .ai {
+  color: purple;
+}
+.ai .copilot {
+  color: red;
+}
+
+/* 겹침 */
+body {
+  color: red;
+}
+/* 겹침(선택자의 우선순위) */
+
+p {
+  color: gray;
+}
+p {
+  color: orange;
+}
+p {
+  color: pink;
+}
