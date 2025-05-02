@@ -1,0 +1,30 @@
+/* 배경 스타일링 */
+/* rgba() 함수로 배경 색상 적용하기 */
+body {
+  background-color: rgba(255, 255, 180, 0.8);
+  background-image:
+    url('/src/assets/images/sun.png'), url('/src/assets/images/cloud.png');
+
+  background-repeat: no-repeat, repeat;
+  background-position: 200px 150px;
+  background-size: 100px, auto;
+  background-attachment: fixed;
+}
+
+a {
+  display: inline-block;
+  border: 1px solid currentColor;
+  padding: 10px 30px;
+  background-color: hsla(110, 50%, 50%, 0.5);
+  background-image: url(/src/assets/thumbnail/external-link.png);
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: 20px;
+
+  /*축약코드 background-color: hsla(110, 50%, 50%, 0.5) url(/src/assets/thumbnail/external-link.png) no-repeat 0 50% /14px;
+ */
+}
+/* rgb()함수로 배경 색상 적용하기(투명도 지정가능) */
+h1 {
+  background-color: rgb(255 160 255 /0.7);
+}

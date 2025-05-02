@@ -1,0 +1,28 @@
+@import '/src/common/mini-reset.css';
+
+/* 타이포그래피 및 단위 */
+/* 글자 크기 */
+/* em-현재 글자크기 비례 (상속과도 관련 있음) */
+/* rem - root를 기준으로 계산 */
+
+.like {
+  font-size: 1.5em;
+}
+html {
+  font-size: 10px;
+
+  @media (min-width: 600px) {
+    font-size: 20px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 30px;
+  }
+}
+/* 뷰포트 기준으로  */
+.school {
+  .like {
+    font-size: 5vw;
+    color: green;
+  }
+}
