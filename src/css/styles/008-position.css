@@ -1,0 +1,49 @@
+/* CSS Position */
+/*p.lion:nth-child(6) {
+  border: 1px solid green;
+}
+
+p.lion:nth-of-type(2) {
+  border: 1px solid red;
+  background-color: rgb(255 255 80/0.5);
+  position: relative;
+  left: 100px;
+}
+*/
+
+/*부모위에 자식위에 중첩되어(레이어) 표시됨 */
+/*부모는 static 하고(기준) 자식이 이동*/
+.like {
+  background-color: #000;
+
+  p {
+    border: 1px solid red;
+    background-color: rgb(255 255 80/1);
+    position: relative;
+    bottom: 20px;
+    right: 10px;
+  }
+}
+
+/*fixed 값  */
+/* relative와 달리 자기 위치값을 안 갖고 있음 
+  block 성향으로 변경*/
+h1 {
+  background-color: pink;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+
+/* absolute 값 */
+/* 컨테이닝 블록을 기준으로 배치  자신과 가까운 블럭에서 static이 아닌걸 기준으로*/
+.bootcamp {
+  position: relative;
+  span {
+    background-color: rgb(100 255 30 /0.5);
+    border: 1px solid black;
+    position: absolute;
+    top: 20px;
+    left: 0;
+  }
+}

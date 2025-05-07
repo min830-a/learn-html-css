@@ -1,0 +1,30 @@
+/*  */
+.term {
+  background: #ffc;
+  position: relative;
+  min-height: 68px;
+
+  .term-wrapper {
+    background: pink;
+    margin-right: 76px;
+  }
+}
+
+.term-subject {
+  color: #296897;
+  font-size: 0.875rem;
+  font-size: 700;
+  line-height: 1.5;
+}
+.term-brief {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #181818;
+}
+
+.term-thumnail {
+  color: #296897;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

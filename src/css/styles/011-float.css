@@ -1,0 +1,25 @@
+/* css Float */
+.bootcamp {
+  display: flow-root;
+  border: 1px solid red;
+  /* overflow: hidden; */
+
+  img {
+    width: 150px;
+    border: 1px solid green;
+  }
+
+  .tree {
+    float: right;
+  }
+  .rabbit {
+    float: left;
+  }
+  p {
+    background-color: yellow;
+  }
+
+  .lion {
+    /* clear: both; */
+  }
+}
