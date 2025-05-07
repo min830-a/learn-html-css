@@ -1,0 +1,56 @@
+/* 플롯 레이아웃 */
+body {
+  margin: 50px;
+}
+/* 상품 아이템 컴포넌트 */
+.top-brand-item {
+  background-color: yellow;
+
+  div {
+    background-color: #ccc;
+    border-radius: 0.5rem;
+  }
+
+  img {
+    /* auto margin 기법 */
+    margin-inline: auto;
+    border: 1px solid black;
+  }
+
+  figcaption {
+    background: pink;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+}
+
+/* 상품 리스트 섹션 */
+.top-brand-section {
+  width: 1340px;
+  /* 상자 크기에 영향을 주지 않으면서 테두리 선 스타일링 하기 */
+  box-shadow: 0 0 0 1px #f00;
+  background: #ffc;
+
+  h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #555;
+
+    span[lang] {
+      display: block;
+      color: #000;
+      font-weight: 700;
+      font-size: 1.125rem;
+    }
+
+    ul {
+      margin-top: 28px;
+      display: flow-root;
+      li {
+        width: 228px;
+        float: left;
+        margin-top: 12px;
+      }
+    }
+  }
+}
